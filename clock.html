@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="clock_space">
+        <div class="sec hand"></div>
+        <div class="hour hand"></div>
+        <div class="min hand"></div>
+    </div>
+
+    <style>
+        html{
+            text-align: center;
+        }
+        body{
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+        }
+        .clock_space{
+            width : 180px;
+            height: 180px;
+            border-radius: 50%;
+           padding: 2%;
+            border: 10px solid #00247d;
+            
+        }
+        .hand{
+
+            background-color: blueviolet;
+            width: 50%;
+            height: 2px;
+            position: relative;
+            top:50%;
+            transform-origin: 100%;
+            transform: rotate(90deg);
+        }
+    </style>
+    <script src="/main.js"> </script>
+
+</body>
+</html>
